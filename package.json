@@ -1,0 +1,24 @@
+{
+  "name": "claudecode-pixel-office",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Claude Code hooks + daemon: watch your sessions and subagents live in a top-down pixel-art office",
+  "type": "module",
+  "main": "dist/pixel-office.js",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "build": "node build.ts",
+    "start": "node build.ts && node dist/pixel-office.js",
+    "dev": "node build.ts && node dist/pixel-office.js --debug",
+    "typecheck": "node build.ts && tsc --noEmit",
+    "test": "node --test \"test/*.test.ts\"",
+    "install-office": "node build.ts && node scripts/install.ts"
+  },
+  "devDependencies": {
+    "@types/node": "22.18.0",
+    "esbuild": "0.25.10",
+    "typescript": "5.9.3"
+  }
+}

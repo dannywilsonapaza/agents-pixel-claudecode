@@ -1,0 +1,7 @@
+{
+  "name": "pixel-office",
+  "version": "0.1.0",
+  "description": "Live pixel-art office view of Claude Code sessions, tool calls and subagents.",
+  "author": { "name": "agents-office" },
+  "keywords": ["pixel-art", "visualization", "hooks", "subagents", "observability"]
+}
